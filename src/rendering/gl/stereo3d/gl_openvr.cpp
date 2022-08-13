@@ -1102,7 +1102,7 @@ namespace s3d
 				havePreviousYaw = true;
 			}
 			hmdYawDelta = hmdYaw - previousHmdYaw;
-			G_AddViewAngle(mAngleFromRadians(-hmdYawDelta), true);
+			G_AddViewAngle(mAngleFromRadians(-hmdYawDelta), true, true);
 			previousHmdYaw = hmdYaw;
 		}
 
@@ -1470,7 +1470,7 @@ namespace s3d
 		unsigned int delta = time - lastTime;
 		lastTime = time;
 
-		G_AddViewAngle(joyint(-1280 * I_OpenVRGetYaw() * delta * 30 / 1000), true);
+		G_AddViewAngle(joyint(-1280 * I_OpenVRGetYaw() * delta * 30 / 1000), true, false);
 	}
 
 	/* virtual */
