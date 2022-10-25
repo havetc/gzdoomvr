@@ -63,6 +63,7 @@ CVAR(Float, openvr_weaponRotate, -40, CVAR_ARCHIVE | CVAR_GLOBALCONFIG)
 CVAR(Float, openvr_weaponScale, 0.3f, CVAR_ARCHIVE | CVAR_GLOBALCONFIG)
 
 CVAR(Bool, vr_enable_snapTurn, false, CVAR_ARCHIVE | CVAR_GLOBALCONFIG)
+CVAR(Float, vr_snapAngle, 45, CVAR_ARCHIVE | CVAR_GLOBALCONFIG)
 CVAR(Bool, vr_enable_haptics, true, CVAR_ARCHIVE | CVAR_GLOBALCONFIG)
 CVAR(Float, vr_pickup_haptic_level, 0.25f, CVAR_ARCHIVE | CVAR_GLOBALCONFIG)
 CVAR(Float, vr_quake_haptic_level, 0.8f, CVAR_ARCHIVE | CVAR_GLOBALCONFIG)

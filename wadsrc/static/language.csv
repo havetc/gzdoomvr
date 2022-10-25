@@ -3115,6 +3115,7 @@ Crushed monsters get resurrected as ghosts,CMPTMNU_VILEGHOSTS,,,,Rozdrcené př�
 VR Options,VRPREFMNU,,,,,,,,,,,,,,,,,,,,,,
 Handedness,VRPREFMNU_HANDED,,,,,,,,,,,,,,,,,,,,,,
 Snap Turn,VRPREFMNU_ENABLESNAPTURN,,,,,,,,,,,,,,,,,,,,,,
+Snap Turn Angle,VRPREFMNU_SNAPANGLE,,,,,,,,,,,,,,,,,,,,,,
 Move follows,VRPREFMNU_MOVEFOLLOW,,,,,,,,,,,,,,,,,,,,,,
 Weapon Angle,VRPREFMNU_WEAPONANGLE,,,,,,,,,,,,,,,,,,,,,,
 Look Freedom,VRPREFMNU_LOOKFREEDOM,,,,,,,,,,,,,,,,,,,,,,
