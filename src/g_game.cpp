@@ -884,7 +884,7 @@ void G_AddViewAngle (int yaw, bool mouse, bool track_hmd)
 void G_AddViewAngleSnap(int yaw, bool mouse)
 {
 	static int last_rotation_gametic = gametic - 2;
-	int base_yaw = (2^16) * ( 10 * vr_snapAngle ) ;
+	int base_yaw =  std::round(65535.0 * vr_snapAngle / 360.0);
 
 	int signed_rotation = (yaw < 0) ? -base_yaw : ((yaw > 0) ? base_yaw : 0);
 
@@ -892,7 +892,6 @@ void G_AddViewAngleSnap(int yaw, bool mouse)
 	{
 		if ((gametic - last_rotation_gametic) > 1)
 		{
-
 			signed_rotation = LookAdjust(signed_rotation);
 			LocalViewAngle -= signed_rotation;
 			LocalKeyboardTurner = !mouse;
